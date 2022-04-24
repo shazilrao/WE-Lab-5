@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <p>Input radius value and get the volume of the sphere.</p>
+        <form method="post" id="VolumeForm">
+            <label for="radius">Radius:  </label><input type="text" name="radius" id="radius" required><br><br>
+            <label for="volume">Volume:</label><input type="text" name="volume" id="volume" readonly>
+            <input type="submit" value="Calculate" id="submit">    
+        </form>
+       </div>
+       <script>
+        function volume()
+        {
+            var volume;
+            var radius = document.getElementById('radius').value;
+            radius = Math.abs(radius);
+            volume = (4/3) * Math.PI * Math.pow(radius, 3);
+            volume = volume.toFixed(2);
+            document.getElementById('volume').value = volume;
+            return false;
+        } 
+window.onload = document.getElementById('VolumeForm').onsubmit = volume;
+    </script>
+
+</body>
+</html>

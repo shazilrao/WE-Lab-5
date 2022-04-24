@@ -1,0 +1,55 @@
+.container{
+    background-color: rgba(44, 43, 49, 0.596);
+    height: 90px;
+    display: flex;
+    justify-content: center;
+}
+.main{
+    display: flex;
+    align-items: flex-end;
+    padding: 5px;
+    color: white;
+}
+.CH{
+    background-color: rgb(0, 0, 0);
+}
+.CG{
+    background-color: rgba(233, 17, 17, 0.596);
+}
+.CI{
+    background-color: rgb(0, 255, 191);
+}
+.CP{
+    background-color: rgb(0, 225, 255);
+}
+.CL{
+    background-color: rgb(255, 0, 119);
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.box{
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;  
+}
+.box1{
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;  
+}
+.box>a{
+    text-decoration: none;
+    padding: 10px;
+    border: 2px solid orangered;
+    border-radius: 10px;
+    color: #000;
+}
+.box>a:hover{
+    background-color: orangered;
+    color: rgb(255, 255, 255);
+}
